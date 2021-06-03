@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <div className="w-full h-full min-h-screen bg-gradient-to-b from-white to-background flex justify-center">
       <Head>
-        <title>Create Next App</title>
+        <title>Re9Piscinas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full h-full flex flex-col justify-center items-center">
