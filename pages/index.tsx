@@ -50,7 +50,7 @@ export default function Home() {
       </Head>
       <main className="w-full h-full flex flex-col justify-center items-center">
         <header className="flex w-full lg:w-2/3 justify-between items-center mx-auto">
-         <span className="font-bold text-xl">Re9Piscinas</span> 
+        <img src="/images/logo.png" className="w-52"/>
          <CTA />
         </header>
         <section className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-between items-center mt-40">
