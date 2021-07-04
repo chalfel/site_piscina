@@ -28,8 +28,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full h-full flex flex-col justify-center items-center">
-        <header className="flex w-full lg:w-2/3 justify-between items-center mx-auto">
-        <img src="/images/logo.png" className="w-52"/>
+        <header className="flex w-full lg:w-2/3 justify-between items-center mx-auto mt-5">
+        <img src="/images/logo.png" className="w-1/4"/>
          <CTA />
         </header>
         <section className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-between items-center mt-40">
