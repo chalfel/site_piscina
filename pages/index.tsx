@@ -38,7 +38,7 @@ export default function Home() {
             <p className="my-3 w-2/3 text-xl text-gray-600 font-medium text-center lg:text-left">Deixe que cuidamos da sua piscina para você, para que você possa ter os melhores momentos com quem ama.</p>
             <CTA />
           </div>
-          <div className="w-1/2 mt-10 lg:mt-20 lg:w-2/3 relative">
+          <div className="w-1/2 mt-10 lg:w-2/3 relative">
             <img src="/images/pool.jpg" className="filter blur-xl opacity-50 absolute inset-y-4" />
             <img src="/images/pool.jpg" className="w-full h-full relative rounded-md" />
           </div>
