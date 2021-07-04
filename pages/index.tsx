@@ -28,13 +28,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="w-full h-full flex flex-col justify-center items-center">
-        <header className="flex w-full lg:w-2/3 justify-between items-center mx-auto mt-5">
-        <img src="/images/logo.png" className="w-1/4"/>
+        <header className="flex flex-col w-full lg:w-2/3 justify-between items-center mx-auto mt-5 lg:flex-row">
+        <img src="/images/logo.png" className="w-1/2 lg:w-1/3"/>
          <CTA />
         </header>
         <section className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-between items-center mt-40">
           <div className="flex flex-col items-center lg:items-start lg:w-1/2">
-            <h1 className="font-bold text-3xl text-center lg:text-left lg:text-5xl">Tenha momentos maravilhosos em familia</h1>
+            <h1 className="font-bold text-2xl text-center lg:text-left lg:text-3xl">Tenha momentos maravilhosos em familia</h1>
             <p className="my-3 w-2/3 text-xl text-gray-600 font-medium text-center lg:text-left">Deixe que cuidamos da sua piscina para você, para que você possa ter os melhores momentos com quem ama.</p>
             <CTA />
           </div>
