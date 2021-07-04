@@ -29,16 +29,16 @@ export default function Home() {
       </Head>
       <main className="w-full h-full flex flex-col justify-center items-center">
         <header className="flex flex-col w-full lg:w-2/3 justify-between items-center mx-auto mt-5 lg:flex-row">
-        <img src="/images/logo.png" className="w-1/2 lg:w-1/3"/>
+        <img src="/images/logo.png" className="w-1/3 lg:w-1/3"/>
          <CTA />
         </header>
-        <section className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-between items-center mt-40">
+        <section className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-between items-center mt-10">
           <div className="flex flex-col items-center lg:items-start lg:w-1/2">
-            <h1 className="font-bold text-2xl text-center lg:text-left lg:text-3xl">Tenha momentos maravilhosos em familia</h1>
+            <h1 className="w-2/3 font-bold text-2xl text-center lg:text-left lg:text-2xl">Tenha momentos maravilhosos em familia</h1>
             <p className="my-3 w-2/3 text-xl text-gray-600 font-medium text-center lg:text-left">Deixe que cuidamos da sua piscina para você, para que você possa ter os melhores momentos com quem ama.</p>
             <CTA />
           </div>
-          <div className="mt-10 lg:mt-0 lg:w-1/2 relative">
+          <div className="w-1/2 mt-10 lg:mt-20 lg:w-2/3 relative">
             <img src="/images/pool.jpg" className="filter blur-xl opacity-50 absolute inset-y-4" />
             <img src="/images/pool.jpg" className="w-full h-full relative rounded-md" />
           </div>
