@@ -3,41 +3,20 @@ import { useCallback, useState } from 'react';
 import {CTA} from '../components/CTA'
 export default function Home() {
   const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [isLoading, setIsLoading] = useState(false)
 
-  const handleOnPhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { target } = e;
-    const { value } = target
-    setPhone(value)
-  }
   const handleOnNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { target } = e;
     const { value } = target
     setName(value)
   }
-  const handleOnEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { target } = e;
-    const { value } = target
-    setEmail(value)
-  }
-
-    const validateEmail = (email: string) => {
-      const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-      return re.test(email);
-    };
   const handleOnSubmit = () => {
     try {
       setIsLoading(true)
-      if (email.length === 0 || name.length === 0 || phone.length === 0) {
+      if (name.length === 0) {
         return
       }
-      if (!validateEmail(email)) {
-        return
-      }
-
-      alert('Muito obrigado, logo entraremos em contato.')
+      window.open(`https://api.whatsapp.com/send?phone=5519996942311&text=Ola,%20meu%20nome%20%C3%A9%20${name}%20e%20gostaria%20de%20um%20or%C3%A7amento`)
     } finally {
       setIsLoading(false)
     }
@@ -85,8 +64,6 @@ export default function Home() {
             <h1 className="font-bold text-4xl">Faça um orçamento</h1>
             <form className="mt-10 py-10 w-80 flex flex-col items-center justify-between space-y-5" id="form">
              <input placeholder="Nome" className="w-full h-16 rounded-md pl-3 font-bold shadow" type="name" onChange={handleOnNameChange}></input> 
-             <input placeholder="Email" className="w-full h-16 rounded-md pl-3 font-bold shadow" type="email" onChange={handleOnEmailChange}></input> 
-             <input placeholder="Telefone" className="w-full h-16 rounded-md pl-3 font-bold shadow" onChange={handleOnPhoneChange}></input> 
              <div className="relative w-full">
                 <button className="w-full h-16 font-bold  bg-primary rounded-md absolute filter blur-lg opacity-80 inset-y-3"></button>
                 <button disabled={isLoading} onClick={handleOnSubmit} type="button" className="w-full h-16 font-bold  bg-primary text-white rounded-md cursor-pointer relative disabled:bg-gray-400">
